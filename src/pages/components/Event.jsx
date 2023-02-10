@@ -9,7 +9,7 @@ const Event = () => {
           <p className="text-4xl text-center mb-4 font-easyRider uppercase border-b-4 inline border-b-secondary-blue-200">
             Event
           </p>
-          <div className="grid md:grid-cols-2 gap-y-6 items-stretch text-justify mt-4">
+          <div className="grid md:grid-cols-2 gap-x-3 gap-y-6 items-stretch text-justify mt-4">
             <div className="flex flex-col justify-between items-center">
               <h1 className="text-3xl font-easyRider text-center mb-4">
                 Surf Spirit Fun Camp

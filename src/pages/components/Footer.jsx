@@ -28,31 +28,33 @@ const Footer = () => {
           }
         />
         <ul className="flex flex-col text-black text-[12px]">
-          <li className="flex items-center">
-            <HiOutlineMail size={50} className="mr-1" />
-            <a href="mailto:posada@nidosurf.com">posada@nidosurf.com</a>
-          </li>
+          <a href="mailto:posada@nidosurf.com">
+            <li className="flex items-center">
+              <HiOutlineMail size={50} className="mr-1" />
+              posada@nidosurf.com
+            </li>
+          </a>
 
-          <li className="flex items-center">
-            <AiOutlineInstagram size={50} className="mr-1" />
-            <a
-              href="https://www.instagram.com/oli_goetz/"
-              rel="noreferrer"
-              target="_blank"
-            >
+          <a
+            href="https://www.instagram.com/rebi_bl/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <li className="flex items-center">
+              <AiOutlineInstagram size={50} className="mr-1" />
               Rebekka
-            </a>
-          </li>
-          <li className="flex items-center">
-            <AiOutlineInstagram size={50} className="mr-1" />
-            <a
-              href="https://www.instagram.com/michaela_suessbauer/"
-              rel="noreferrer"
-              target="_blank"
-            >
+            </li>
+          </a>
+          <a
+            href="https://www.instagram.com/michaela_suessbauer/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <li className="flex items-center">
+              <AiOutlineInstagram size={50} className="mr-1" />
               Michaela
-            </a>
-          </li>
+            </li>
+          </a>
         </ul>
       </div>
 
