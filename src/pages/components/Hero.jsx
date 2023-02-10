@@ -2,8 +2,8 @@ import ContactModal from "./ContactModal";
 const Hero = () => {
   return (
     <>
-      <div className="flex justify-center items-center bg-cover h-screen bg-fixed bg-center hero-image">
-        <div className="bg-gray-700/30 inset-0 absolute" />
+      <div className="min-h-screen max-h-screen flex justify-center items-center bg-cover h-screen bg-fixed bg-no-repeat bg-center hero-image">
+        <div className="bg-gray-700/30 h-screen inset-0 absolute" />
         <div className="z-[2] text-center">
           <p className="uppercase font-easyRider text-lg  text-white">
             Let the sea set you free
