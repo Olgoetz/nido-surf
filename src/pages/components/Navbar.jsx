@@ -24,7 +24,7 @@ const NavBar = () => {
         className={`${navColor} px-4 fixed w-full flex justify-between z-[5] items-center h-[80px]`}
       >
         <Link href="/">
-          <Image alt="nido-surf" width={70} priority src={LogoVert}></Image>
+          <Image alt="nido-surf" width={100} priority src={LogoVert}></Image>
         </Link>
 
         <ul className=" hidden md:flex uppercase">
