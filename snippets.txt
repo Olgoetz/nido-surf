@@ -1,0 +1,6 @@
+<ReactPlayer url="https://www.youtube.com/embed/bcwXP-eqZcU" playing />
+
+import dynamic from "next/dynamic";
+const ReactPlayer = dynamic(() => import("react-player/youtube"), {
+  ssr: false,
+});

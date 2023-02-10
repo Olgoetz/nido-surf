@@ -1,0 +1,74 @@
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import Image from "next/image";
+import LogoVert from "../../../public/images/logo_vert.png";
+const NavBar = () => {
+  const [nav, setNav] = useState(false);
+  const [navColor, setNavColor] = useState("");
+  useEffect(() => {
+    const handleNavColor = () => {
+      if (window.scrollY >= 90) {
+        setNavColor("bg-primary-100");
+      } else {
+        setNavColor("false");
+      }
+    };
+    window.addEventListener("scroll", handleNavColor);
+  }, []);
+
+  const handleClick = () => setNav(!nav);
+  return (
+    <>
+      <div
+        className={`${navColor} px-4 fixed w-full flex justify-between z-[5] items-center h-[80px]`}
+      >
+        <Link href="/">
+          <Image alt="nido-surf" width={70} priority src={LogoVert}></Image>
+        </Link>
+
+        <ul className=" hidden md:flex uppercase">
+          <li className="px-4 cursor-pointer">
+            <Link href="/">home</Link>
+          </li>
+          <li className="px-4 cursor-pointer">
+            <Link href="/#event">event</Link>
+          </li>
+          <li className="px-4 cursor-pointer">
+            <Link href="/#package">paket</Link>
+          </li>
+        </ul>
+
+        <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
+          {!nav ? <FaBars size={20} /> : <FaTimes size={20} color="white" />}
+        </div>
+
+        <ul
+          className={
+            nav
+              ? "px-4 cursor-pointer fixed inset-0 h-screen flex flex-col items-center justify-center uppercase gap-y-6 text-3xl bg-black text-white w-full"
+              : "hidden"
+          }
+        >
+          <li className="cursor-pointer">
+            <Link onClick={handleClick} href="/">
+              home
+            </Link>
+          </li>
+          <li className="cursor-pointer">
+            <Link onClick={handleClick} href="/#event">
+              event
+            </Link>
+          </li>
+          <li className="cursor-pointer">
+            <Link onClick={handleClick} href="/#package">
+              paket
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </>
+  );
+};
+
+export default NavBar;
