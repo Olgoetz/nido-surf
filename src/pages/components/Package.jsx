@@ -140,7 +140,7 @@ const Package = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10 bg-fixed bg-center bg-cover h-[500px] yoga-image" />
+      <div className="mt-10 hover:bg-fixed bg-center bg-cover h-[500px] yoga-image" />
     </>
   );
 };
