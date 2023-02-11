@@ -16,7 +16,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="w-full bg-secondary-green-400 px-5 pt-5 pb-2">
+    <div className="w-full px-5 pt-5 pb-2">
       <div className="grid gap-8 md:grid-cols-3 justify-items-center items-center">
         <div className="flex justify-center">
           <Image alt="nido-surf" src={LogoHori} width={500}></Image>
@@ -24,7 +24,7 @@ const Footer = () => {
 
         <ContactModal
           buttonStyles={
-            "w-[200px] hover:bg-black hover:text-white text-black p-4 uppercase border-black border-2"
+            "w-[200px] hover:bg-white hover:text-black text-black p-4 uppercase border-black border-2"
           }
         />
         <ul className="flex flex-col text-black text-[12px]">

@@ -16,7 +16,7 @@ const customStyles = {
 };
 
 Modal.setAppElement("#__next");
-//ajax/438dae3a7d12323f55c6fe8e5e790eae
+
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
 
 const ContactModal = ({ buttonStyles }) => {
@@ -74,7 +74,7 @@ const ContactModal = ({ buttonStyles }) => {
 
     try {
       const result = await fetch(
-        "https://formsubmit.co/posada@nidosurf.com",
+        `https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_EMAIL_ENDPOINT}`,
         requestOptions
       );
       if (result.status == 200) {

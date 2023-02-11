@@ -29,7 +29,7 @@ const Event = () => {
               />
               <ContactModal
                 buttonStyles={
-                  "w-[200px] hover:bg-black hover:text-white text-black p-4 uppercase border-black border-2"
+                  "w-[200px] hover:bg-white hover:text-black text-black p-4 uppercase border-black border-2"
                 }
               />
             </div>
