@@ -16,7 +16,7 @@ const customStyles = {
 };
 
 Modal.setAppElement("#__next");
-
+//ajax/438dae3a7d12323f55c6fe8e5e790eae
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
 
 const ContactModal = ({ buttonStyles }) => {
@@ -47,7 +47,8 @@ const ContactModal = ({ buttonStyles }) => {
     setIsOpen(false);
   }
 
-  async function handleSubmit(event) {
+  const handleSubmit = async (event) => {
+    console.log("clicked");
     event.preventDefault();
     const data = {
       lastName: lastNameInputElement.current?.value,
@@ -73,7 +74,7 @@ const ContactModal = ({ buttonStyles }) => {
 
     try {
       const result = await fetch(
-        "https://formsubmit.co/ajax/438dae3a7d12323f55c6fe8e5e790eae",
+        "https://formsubmit.co/posada@nidosurf.com",
         requestOptions
       );
       if (result.status == 200) {
@@ -86,7 +87,7 @@ const ContactModal = ({ buttonStyles }) => {
       console.log(error);
       setSuccessfulSubmission(false);
     }
-  }
+  };
 
   return (
     <div>
@@ -101,10 +102,10 @@ const ContactModal = ({ buttonStyles }) => {
         contentLabel="Nido Surf"
       >
         <div className="w-[300px] md:w-[600px]">
-          <Image src={LogoHori} width={300} />
+          <Image src={LogoHori} alt="nido-surf-logo" width={300} />
           <form
-            className="mt-5 flex flex-col justify-between"
             onSubmit={handleSubmit}
+            className="mt-5 flex flex-col justify-between"
           >
             <label htmlFor="name" className="font-bold mb-2">
               Nachname
@@ -153,36 +154,35 @@ const ContactModal = ({ buttonStyles }) => {
               cols="30"
               rows="10"
             ></textarea>
+            <div className="mt-5 flex gap-x-4 justify-center items-center">
+              <button
+                type="submit"
+                className="w-full text-white rounded-md py-4 hover:bg-secondary-green-300 bg-secondary-green-400"
+              >
+                Senden
+              </button>
+              <button
+                className="w-full text-white rounded-md py-4 hover:bg-secondary-red-100 bg-secondary-red-300"
+                onClick={closeModal}
+              >
+                Abbrechen
+              </button>
+            </div>
+            <div className="text-center mt-2">
+              {successfulSubmission && successfulSubmission !== "" ? (
+                <p className="text-secondary-green-400">Nachricht verschickt</p>
+              ) : (
+                ""
+              )}
+              {!successfulSubmission && successfulSubmission !== "" ? (
+                <p className="text-secondary-red-200">
+                  Fehlgeschlagen. Bitte versuche es nochmal!
+                </p>
+              ) : (
+                ""
+              )}
+            </div>
           </form>
-          <div className="mt-5 flex gap-x-4 justify-center items-center">
-            <button
-              type="submit"
-              className="w-full text-white rounded-md py-4 hover:bg-secondary-green-300 bg-secondary-green-400"
-              // onClick={handleSubmit}
-            >
-              Senden
-            </button>
-            <button
-              className="w-full text-white rounded-md py-4 hover:bg-secondary-red-100 bg-secondary-red-300"
-              onClick={closeModal}
-            >
-              Abbrechen
-            </button>
-          </div>
-          <div className="text-center mt-2">
-            {successfulSubmission && successfulSubmission !== "" ? (
-              <p className="text-secondary-green-400">Nachricht verschickt</p>
-            ) : (
-              ""
-            )}
-            {!successfulSubmission && successfulSubmission !== "" ? (
-              <p className="text-secondary-red-200">
-                Fehlgeschlagen. Bitte versuche es nochmal!
-              </p>
-            ) : (
-              ""
-            )}
-          </div>
         </div>
       </Modal>
     </div>
