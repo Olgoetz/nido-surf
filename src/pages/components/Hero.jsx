@@ -3,12 +3,11 @@ const Hero = () => {
   return (
     <>
       <div className="flex justify-center items-center bg-cover h-screen md:bg-fixed bg-center hero-image">
-        <div className="h-screen inset-0 absolute" />
-        <div className="z-[2] text-center">
+        <div className="text-center">
           <p className="uppercase font-easyRider text-lg">
             Let the sea set you free
           </p>
-          <h1 className="text-6xl mb-4 uppercase font-easyRider text-white">
+          <h1 className="text-3xl md:text-6xl mb-4 uppercase font-easyRider text-white">
             Kite-/Surf Spirit Fun Camp
           </h1>
           <div className="text-white">

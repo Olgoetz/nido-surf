@@ -39,7 +39,7 @@ const AboutUs = () => {
             </div>
             <div>
               <p className="text-xl text-center text-secondary-green-400">
-                Michael Süßbauer
+                Michaela Süßbauer
               </p>
 
               <div className="text-justify">
