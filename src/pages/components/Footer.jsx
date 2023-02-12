@@ -5,6 +5,8 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import LogoHori from "../../../public/images/logo_hori.png";
 import Link from "next/link";
 import Image from "next/image";
+
+import LogoMichi from "../../../public/images/logo_michi_txt.png";
 import ContactModal from "./ContactModal";
 const Footer = () => {
   const [currentDate, setCurrentDate] = useState();
@@ -16,10 +18,11 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="w-full px-5 pt-5 pb-2">
+    <div className="w-full px-5 pt-5 pb-2 bg-primary-300">
       <div className="grid gap-8 md:grid-cols-3 justify-items-center items-center">
-        <div className="flex justify-center">
-          <Image alt="nido-surf" src={LogoHori} width={500}></Image>
+        <div className="flex flex-col justify-between items-center">
+          <Image alt="nido-surf" src={LogoHori} width={500} />
+          <Image alt="michaela-suessbauer" src={LogoMichi} width={400} />
         </div>
 
         <ContactModal

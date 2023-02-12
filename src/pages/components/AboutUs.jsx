@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import LogoMichi from "../../../public/images/logo_michi.png";
 const AboutUs = () => {
   return (
     <>
@@ -38,6 +38,7 @@ const AboutUs = () => {
               <p className="text-xl text-center text-secondary-green-400">
                 Michael Süßbauer
               </p>
+
               <div className="text-justify">
                 <p>
                   <span className="text-secondary-blue-300">
