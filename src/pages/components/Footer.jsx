@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <div className="w-full px-5 pt-5 pb-2 bg-primary-300">
       <div className="grid gap-8 md:grid-cols-3 justify-items-center items-center">
-        <div className="flex flex-col justify-between items-center">
+        <div className="flex flex-col justify-between gap-y-4 items-center">
           <Image alt="nido-surf" src={LogoHori} width={500} />
           <Image alt="michaela-suessbauer" src={LogoMichi} width={400} />
         </div>
@@ -63,7 +63,7 @@ const Footer = () => {
 
       <div className="flex flex-col text-sm text-black pt-5">
         <div className="flex justify-center pb-3">
-          <Link href="/">Impressum</Link>
+          <Link href="/impressum">Impressum</Link>
           <span className="mx-2">|</span>
           <Link href="/">Datenschutz</Link>
         </div>

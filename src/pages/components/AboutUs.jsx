@@ -1,9 +1,12 @@
 import Image from "next/image";
-import LogoMichi from "../../../public/images/logo_michi.png";
+import Board from "../../../public/assets/nido-asset-6.png";
+import Tree from "../../../public/assets/nido-asset-17.png";
+import Cocktail from "../../../public/assets/nido-asset-19.png";
+
 const AboutUs = () => {
   return (
     <>
-      <div id="aboutus" className="max-w-[1400px] px-4 pt-24 mx-auto">
+      <div id="aboutus" className="max-w-[1400px] px-4 py-24 mx-auto">
         <div className="flex flex-col w-full h-full justify-center items-center">
           <p className="text-4xl text-center mb-4 font-easyRider uppercase border-b-4 inline border-b-secondary-blue-200">
             About Us
@@ -40,39 +43,43 @@ const AboutUs = () => {
               </p>
 
               <div className="text-justify">
+                <span className="text-secondary-blue-300">
+                  {" "}
+                  Motivation, Power, Temperament, Lebensfreude und ein
+                  strahlendes Lächeln…{" "}
+                </span>
+                das sind die Worte mit denen man Michaela am besten beschreiben
+                kann. Vor über 20 Jahren hängte Michi ihren Job als Bürokauffrau
+                an den Nagel, um ihre Passion für Sport und Tanz zum Beruf zu
+                machen. Seitdem reißt Michi die Teilnehmer in ihren Group
+                Fitness Kursen mit und vermittelt ihnen als Personaltrainerin
+                Spaß an der Bewegung. Michis Yoga Sessions und ihre
+                Core-Flexibility- und Faszien Einheiten sind ein ganzheitliches
+                Erlebnis für Body & Soul, nach dem ihr euch erfrischt und
+                energiegeladen fühlt und die Wirkung noch lange nachhält. Michi
+                ist außerdem leidenschaftliche Kiterin und liebt das Gefühl der
+                Freiheit auf dem Wasser.{" "}
                 <p>
-                  <span className="text-secondary-blue-300">
-                    {" "}
-                    Motivation, Power, Temperament, Lebensfreude und ein
-                    strahlendes Lächeln…{" "}
-                  </span>
-                  das sind die Worte mit denen man Michaela am besten
-                  beschreiben kann. Vor über 20 Jahren hängte Michi ihren Job
-                  als Bürokauffrau an den Nagel, um ihre Passion für Sport und
-                  Tanz zum Beruf zu machen. Seitdem reißt Michi die Teilnehmer
-                  in ihren Group Fitness Kursen mit und vermittelt ihnen als
-                  Personaltrainerin Spaß an der Bewegung. Michis Yoga Sessions
-                  und ihre Core-Flexibility- und Faszien Einheiten sind ein
-                  ganzheitliches Erlebnis für Body & Soul, nach dem ihr euch
-                  erfrischt und energiegeladen fühlt und die Wirkung noch lange
-                  nachhält. Michi ist außerdem leidenschaftliche Kiterin und
-                  liebt das Gefühl der Freiheit auf dem Wasser.{" "}
-                  <p>
-                    Für mehr Infos über Michi besucht ihre Homepage unter:{" "}
-                    <a
-                      className="text-secondary-blue-200"
-                      href="https://www.michaela-suessbauer.de"
-                    >
-                      https://www.michaela-suessbauer.de
-                    </a>
-                  </p>
+                  Für mehr Infos über Michi besucht ihre Homepage unter:{" "}
+                  <a
+                    className="text-secondary-blue-200"
+                    href="https://www.michaela-suessbauer.de"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    https://www.michaela-suessbauer.de
+                  </a>
                 </p>
               </div>
             </div>
           </div>
         </div>
+        <div className="flex justify-around items-center mt-10">
+          <Image src={Board} height={100} />
+          <Image src={Tree} height={100} />
+          <Image src={Cocktail} height={100} />
+        </div>
       </div>
-      <div className="mt-10 md:bg-fixed bg-center bg-cover h-[500px] yoga-image" />
     </>
   );
 };
