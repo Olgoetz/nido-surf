@@ -21,8 +21,8 @@ const Footer = () => {
     <div className="w-full px-5 pt-5 pb-2 bg-primary-300">
       <div className="grid gap-8 md:grid-cols-3 justify-items-center items-center">
         <div className="flex flex-col justify-between gap-y-4 items-center">
-          <Image alt="nido-surf" src={LogoHori} width={500} />
-          <Image alt="michaela-suessbauer" src={LogoMichi} width={400} />
+          <Image alt="nido-surf" src={LogoHori} width={200} />
+          <Image alt="michaela-suessbauer" src={LogoMichi} width={200} />
         </div>
 
         <ContactModal

@@ -15,7 +15,7 @@ const Event = () => {
                 Surf Spirit Fun Camp
               </h1>
               <h2 className="text-2xl font-easyRider text-center mb-4">
-                18.03 - 25.03.2023
+                18.03 - 23.03.2023
               </h2>
               <h2 className="text-2xl font-easyRider text-center mb-4">
                 Posada, Sardinien
@@ -42,12 +42,12 @@ const Event = () => {
                 Finde deine Passion fürs Kiten, Wing Foilen, Windsurfen oder
                 verbessere mit unserem Team an Top Lehrern deine Skills auf dem
                 türkisblauen Meer Sardiniens. Michaela Süßbauer bereitet dich
-                mit morgendlichen Yoga Einheiten und gezielten Dehn-/ und
-                Kräftigungsübungen direkt am weißen Sandstrand perfekt auf deine
-                Sessions auf dem Wasser vor. Mobility, Faszien- und Stretching
-                Einheiten nach deinen Stunden auf dem Wasser beschleunigen deine
-                Regeneration. Mit unseren Specials erwarten dich außerdem
-                gemeinsame Momente, an die du noch lange denken wirst!
+                mit morgendlichen Yoga Einheiten direkt am weißen Sandstrand
+                perfekt auf deine Sessions auf dem Wasser vor. Mobility,
+                Faszien- und Stretching Einheiten nach deinen Stunden auf dem
+                Wasser beschleunigen deine Regeneration. Mit unseren Specials
+                erwarten dich außerdem gemeinsame Momente, an die du noch lange
+                denken wirst!
               </p>
             </div>
           </div>

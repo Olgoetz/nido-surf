@@ -13,7 +13,7 @@ const AboutUs = () => {
           </p>
           <div className="text-sm grid md:grid-cols-2 gap-y-6 gap-x-6 items-start mt-4">
             <div>
-              <p className="text-xl text-center text-secondary-green-400">
+              <p className="text-xl text-center text-secondary-green-400 mb-4">
                 Nido Surf
               </p>
               <div className="text-justify">
@@ -38,7 +38,7 @@ const AboutUs = () => {
               </div>
             </div>
             <div>
-              <p className="text-xl text-center text-secondary-green-400">
+              <p className="text-xl text-center text-secondary-green-400 mb-4">
                 Michaela Süßbauer
               </p>
 
@@ -57,8 +57,8 @@ const AboutUs = () => {
                 Core-Flexibility- und Faszien Einheiten sind ein ganzheitliches
                 Erlebnis für Body & Soul, nach dem ihr euch erfrischt und
                 energiegeladen fühlt und die Wirkung noch lange nachhält. Michi
-                ist außerdem leidenschaftliche Kiterin und liebt das Gefühl der
-                Freiheit auf dem Wasser.{" "}
+                ist außerdem leidenschaftliche Kiterin und wie wir liebt sie das
+                Gefühl der Freiheit auf dem Wasser.{" "}
                 <p>
                   Für mehr Infos über Michi besucht ihre Homepage unter:{" "}
                   <a
