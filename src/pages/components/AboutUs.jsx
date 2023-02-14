@@ -2,7 +2,7 @@ import Image from "next/image";
 import Board from "../../../public/assets/nido-asset-6.png";
 import Tree from "../../../public/assets/nido-asset-17.png";
 import Cocktail from "../../../public/assets/nido-asset-19.png";
-
+import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 const AboutUs = () => {
   return (
     <>
@@ -59,22 +59,41 @@ const AboutUs = () => {
                 energiegeladen fühlt und die Wirkung noch lange nachhält. Michi
                 ist außerdem leidenschaftliche Kiterin und wie wir liebt sie das
                 Gefühl der Freiheit auf dem Wasser.{" "}
-                <p>
-                  Für mehr Infos über Michi besucht ihre Homepage unter:{" "}
-                  <a
-                    className="text-secondary-blue-200"
-                    href="https://www.michaela-suessbauer.de"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    https://www.michaela-suessbauer.de
-                  </a>
-                </p>
+                <div className="flex flex-col mt-1">
+                  <p>
+                    Für mehr Infos über Michi besucht ihre Homepage unter:{" "}
+                    <a
+                      className="text-secondary-blue-200"
+                      href="https://www.michaela-suessbauer.de"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      https://www.michaela-suessbauer.de
+                    </a>
+                  </p>
+
+                  <div className="flex justify-center gap-x-8 items-center mt-2">
+                    <a
+                      href="https://www.instagram.com/michaela_suessbauer/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <AiFillInstagram size={30} />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/michaelasuessbauer1.de"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <AiFillFacebook size={30} />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex justify-around items-center mt-10">
+        <div className="flex justify-around items-center mt-12">
           <Image src={Board} height={100} />
           <Image src={Tree} height={100} />
           <Image src={Cocktail} height={100} />

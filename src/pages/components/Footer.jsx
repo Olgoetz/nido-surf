@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { BiCopyright } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
-import { AiOutlineInstagram } from "react-icons/ai";
 import LogoHori from "../../../public/images/logo_hori.png";
 import Link from "next/link";
 import Image from "next/image";
@@ -35,27 +34,6 @@ const Footer = () => {
             <li className="flex items-center">
               <HiOutlineMail size={50} className="mr-1" />
               posada@nidosurf.com
-            </li>
-          </a>
-
-          <a
-            href="https://www.instagram.com/rebi_bl/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <li className="flex items-center">
-              <AiOutlineInstagram size={50} className="mr-1" />
-              Rebekka
-            </li>
-          </a>
-          <a
-            href="https://www.instagram.com/michaela_suessbauer/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <li className="flex items-center">
-              <AiOutlineInstagram size={50} className="mr-1" />
-              Michaela
             </li>
           </a>
         </ul>
