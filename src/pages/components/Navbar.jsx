@@ -37,32 +37,40 @@ const NavBar = () => {
           <li className="px-4 cursor-pointer">
             <Link href="/#package">paket</Link>
           </li>
+          <li className="px-4 cursor-pointer">
+            <Link href="/#aboutus">über uns</Link>
+          </li>
         </ul>
 
-        <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
+        <div onClick={handleClick} className="lg:hidden z-10 cursor-pointer">
           {!nav ? <FaBars size={20} /> : <FaTimes size={20} color="white" />}
         </div>
 
         <ul
           className={
             nav
-              ? "px-4 cursor-pointer fixed inset-0 h-screen flex flex-col items-center justify-center uppercase gap-y-6 text-3xl bg-black text-white w-full"
+              ? "px-4 cursor-pointer fixed inset-0 h-screen flex flex-col items-center justify-center uppercase text-3xl bg-black text-white w-full"
               : "hidden"
           }
         >
-          <li className="cursor-pointer">
+          <li className="cursor-pointer mb-6">
             <Link onClick={handleClick} href="/">
               home
             </Link>
           </li>
-          <li className="cursor-pointer">
+          <li className="cursor-pointer mb-6">
             <Link onClick={handleClick} href="/#event">
               event
             </Link>
           </li>
-          <li className="cursor-pointer">
+          <li className="cursor-pointer mb-6">
             <Link onClick={handleClick} href="/#package">
               paket
+            </Link>
+          </li>
+          <li className="cursor-pointer mb-6">
+            <Link onClick={handleClick} href="/#aboutus">
+              über uns
             </Link>
           </li>
         </ul>

@@ -12,10 +12,10 @@ const Event = () => {
           <div className="grid md:grid-cols-2 gap-x-3 gap-y-6 items-stretch text-justify mt-4">
             <div className="flex flex-col justify-between items-center">
               <h1 className="text-3xl font-easyRider text-center mb-4">
-                Surf Spirit Fun Camp
+                Kite-/Surf Spirit Fun Camp
               </h1>
               <h2 className="text-2xl font-easyRider text-center mb-4">
-                18.03 - 25.03.2023
+                18.05 - 23.05.2023
               </h2>
               <h2 className="text-2xl font-easyRider text-center mb-4">
                 Posada, Sardinien
@@ -29,7 +29,7 @@ const Event = () => {
               />
               <ContactModal
                 buttonStyles={
-                  "w-[200px] hover:bg-black hover:text-white text-black p-4 uppercase border-black border-2"
+                  "w-[200px] hover:bg-white hover:text-black text-black p-4 uppercase border-black border-2"
                 }
               />
             </div>
@@ -42,12 +42,12 @@ const Event = () => {
                 Finde deine Passion fürs Kiten, Wing Foilen, Windsurfen oder
                 verbessere mit unserem Team an Top Lehrern deine Skills auf dem
                 türkisblauen Meer Sardiniens. Michaela Süßbauer bereitet dich
-                mit morgendlichen Yoga Einheiten und gezielten Dehn-/ und
-                Kräftigungsübungen direkt am weißen Sandstrand perfekt auf deine
-                Sessions auf dem Wasser vor. Mobility, Faszien- und Stretching
-                Einheiten nach deinen Stunden auf dem Wasser beschleunigen deine
-                Regeneration. Mit unseren Specials erwarten dich außerdem
-                gemeinsame Momente, an die du noch lange denken wirst!
+                mit morgendlichen Yoga Einheiten direkt am weißen Sandstrand
+                perfekt auf deine Sessions auf dem Wasser vor. Mobility,
+                Faszien- und Stretching Einheiten nach deinen Stunden auf dem
+                Wasser beschleunigen deine Regeneration. Mit unseren Specials
+                erwarten dich außerdem gemeinsame Momente, an die du noch lange
+                denken wirst!
               </p>
             </div>
           </div>

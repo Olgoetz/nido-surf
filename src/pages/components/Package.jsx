@@ -9,6 +9,7 @@ import { BiDrink } from "react-icons/bi";
 import { TbGrill } from "react-icons/tb";
 import { IoPizzaOutline } from "react-icons/io5";
 import { BsFile } from "react-icons/bs";
+import { GiFallingStar } from "react-icons/gi";
 const Package = () => {
   return (
     <>
@@ -52,8 +53,7 @@ const Package = () => {
                     </div>
                     <p>
                       Wechselnde Core-Flexibility-/Faszien Einheiten zur
-                      Regeneration Bootcamp & Workout am Strand (no Wind
-                      Solution)
+                      Regeneration
                     </p>
                   </div>
                 </li>
@@ -133,6 +133,17 @@ const Package = () => {
                       <BsFile size={30} />
                     </div>
                     <p>Eine Yoga Matte von Airex</p>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center text-secondary-blue-300">
+                    <div className="p-3 rounded-full border-black">
+                      <GiFallingStar size={30} />
+                    </div>
+                    <p>
+                      Special Guest auf der Nido Surf Season Opening Party am
+                      20. Mai
+                    </p>
                   </div>
                 </li>
               </ul>

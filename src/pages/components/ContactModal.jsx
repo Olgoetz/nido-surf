@@ -1,6 +1,7 @@
-import { useState, useRef } from "react";
+import { useState, useRef, use } from "react";
 import Modal from "react-modal";
 import LogoHori from "../../../public/images/logo_hori.png";
+import { ClipLoader } from "react-spinners";
 import Image from "next/image";
 const customStyles = {
   content: {
@@ -16,13 +17,14 @@ const customStyles = {
 };
 
 Modal.setAppElement("#__next");
-//ajax/438dae3a7d12323f55c6fe8e5e790eae
+
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
 
 const ContactModal = ({ buttonStyles }) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [isValidEmail, setIsValidEmail] = useState(true);
   const [successfulSubmission, setSuccessfulSubmission] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const lastNameInputElement = useRef();
   const firstNameInputElement = useRef();
   const emailInputElement = useRef();
@@ -67,24 +69,25 @@ const ContactModal = ({ buttonStyles }) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Accept: "application/json",
       },
       body: JSON.stringify(data),
     };
 
     try {
+      setIsLoading(true);
       const result = await fetch(
-        "https://formsubmit.co/posada@nidosurf.com",
+        `https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_EMAIL_ENDPOINT}`,
         requestOptions
       );
+      setIsLoading(false);
       if (result.status == 200) {
         setSuccessfulSubmission(true);
         setTimeout(closeModal, 5000);
       } else {
         throw new Error();
       }
-    } catch {
-      console.log(error);
+    } catch (error) {
+      console.error(error);
       setSuccessfulSubmission(false);
     }
   };
@@ -152,14 +155,18 @@ const ContactModal = ({ buttonStyles }) => {
               name="message"
               id="message"
               cols="30"
-              rows="10"
+              rows="5"
             ></textarea>
             <div className="mt-5 flex gap-x-4 justify-center items-center">
               <button
                 type="submit"
                 className="w-full text-white rounded-md py-4 hover:bg-secondary-green-300 bg-secondary-green-400"
               >
-                Senden
+                {isLoading ? (
+                  <ClipLoader color="#ffffff" size={20} />
+                ) : (
+                  "Senden"
+                )}
               </button>
               <button
                 className="w-full text-white rounded-md py-4 hover:bg-secondary-red-100 bg-secondary-red-300"
