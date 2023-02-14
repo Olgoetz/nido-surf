@@ -12,7 +12,10 @@ const Impressum = () => {
           <p className="font-bold">Angaben gemäß § 5 TMG</p>
           <br />
           <p>Rebekka Baer</p>
-          <p>xxxxx</p>
+          <p>
+            Windsports Sardinia - ASD Viale Sardegna 33b c/o Studio Mulas e
+            Mercuri Associati Nuoro
+          </p>
           <p>Tel. +49 173 24 30 00 2</p>
           <p>posada@nidosurf.com</p>
           <br />
