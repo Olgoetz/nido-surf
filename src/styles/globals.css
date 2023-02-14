@@ -29,4 +29,9 @@ html {
     @apply font-barlow;
     @apply bg-primary-100;
   }
+
+  .dataprivacy h4 {
+    @apply text-lg;
+    @apply mt-4;
+  }
 }
