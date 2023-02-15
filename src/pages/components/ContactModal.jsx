@@ -76,13 +76,14 @@ const ContactModal = ({ buttonStyles }) => {
     try {
       setIsLoading(true);
       const result = await fetch(
-        `https://formsubmit.co/goetzoliver89@gmail.com`,
+        `https://formsubmit.co/posada@nidosurf.com`,
         requestOptions
       );
       setIsLoading(false);
       if (result.status == 200) {
         setSuccessfulSubmission(true);
         setTimeout(closeModal, 5000);
+        setSuccessfulSubmission("");
       } else {
         throw new Error();
       }
