@@ -110,6 +110,7 @@ const ContactModal = ({ buttonStyles }) => {
           <form
             onSubmit={handleSubmit}
             className="mt-5 flex flex-col justify-between"
+            method="POST"
           >
             <label htmlFor="name" className="font-bold mb-2">
               Nachname
