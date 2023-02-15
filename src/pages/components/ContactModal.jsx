@@ -77,7 +77,7 @@ const ContactModal = ({ buttonStyles }) => {
     try {
       setIsLoading(true);
       const result = await fetch(
-        `https://formsubmit.co/posada@nidosurf.com`,
+        `https://formsubmit.co/rebekka.baer@nidosurf.com`,
         requestOptions
       );
       setIsLoading(false);
