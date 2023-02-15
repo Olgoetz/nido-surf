@@ -13,8 +13,3 @@ resource "vercel_project_domain" "landing_page_redirect" {
   project_id = vercel_project.landing_page.id
   domain     = "surfspiritfun.de"
 }
-
-resource "vercel_project_domain" "landing_page_test" {
-  project_id = vercel_project.landing_page.id
-  domain     = "goetz-oliver.de"
-}
