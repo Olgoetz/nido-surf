@@ -47,6 +47,7 @@ const ContactModal = ({ buttonStyles }) => {
 
   function closeModal() {
     setIsOpen(false);
+    setSuccessfulSubmission("");
   }
 
   const handleSubmit = async (event) => {
@@ -83,7 +84,6 @@ const ContactModal = ({ buttonStyles }) => {
       if (result.status == 200) {
         setSuccessfulSubmission(true);
         setTimeout(closeModal, 5000);
-        setSuccessfulSubmission("");
       } else {
         throw new Error();
       }
