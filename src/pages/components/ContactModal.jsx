@@ -76,7 +76,7 @@ const ContactModal = ({ buttonStyles }) => {
     try {
       setIsLoading(true);
       const result = await fetch(
-        `https://formsubmit.co/goetzoliver89@gmail.com}`,
+        `https://formsubmit.co/goetzoliver89@gmail.com`,
         requestOptions
       );
       setIsLoading(false);
