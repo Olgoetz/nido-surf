@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="flex justify-center pb-3">
           <Link href="/impressum">Impressum</Link>
           <span className="mx-2">|</span>
-          <Link href="/">Datenschutz</Link>
+          <Link href="/datenschutz">Datenschutz</Link>
         </div>
         <div className="flex justify-center">
           <BiCopyright size={20} className="mr-1" />

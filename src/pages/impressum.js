@@ -14,7 +14,7 @@ const Impressum = () => {
           <p>Rebekka Baer</p>
           <p>
             Windsports Sardinia - ASD Viale Sardegna 33b c/o Studio Mulas e
-            Mercuri Associati Nuoro
+            Mercuri Associati Nuoro, I-08020 Posada
           </p>
           <p>Tel. +49 173 24 30 00 2</p>
           <p>posada@nidosurf.com</p>
