@@ -13,7 +13,7 @@ export default {
         width: 800,
         height: 600,
         alt: "nido surf",
-        type: "image/jpeg",
+        type: "image/png",
       },
     ],
   },
