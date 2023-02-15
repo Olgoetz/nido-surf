@@ -141,8 +141,8 @@ const Package = () => {
                       <GiFallingStar size={30} />
                     </div>
                     <p>
-                      Special Guest auf der Nido Surf Season Opening Party am
-                      20. Mai
+                      Du bist VIP Guest auf der Nido Surf Season Opening Party
+                      am 20. Mai
                     </p>
                   </div>
                 </li>

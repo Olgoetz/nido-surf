@@ -7,6 +7,15 @@ export default {
     locale: "de_IE",
     url: process.env.SITE_URL,
     siteName: "Kite-/Surf Spirit Fun Camp",
+    images: [
+      {
+        url: "/images/logo_vert.png",
+        width: 800,
+        height: 600,
+        alt: "nido surf",
+        type: "image/jpeg",
+      },
+    ],
   },
   twitter: {
     handle: "@handle",
