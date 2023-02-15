@@ -80,7 +80,7 @@ const ContactModal = ({ buttonStyles }) => {
         `https://formsubmit.co/rebekka.baer@nidosurf.com`,
         requestOptions
       );
-      console.log(result.body);
+      console.log(result);
       setIsLoading(false);
       if (result.status == 200) {
         setSuccessfulSubmission(true);
