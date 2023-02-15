@@ -5,7 +5,7 @@ export default {
   openGraph: {
     type: "website",
     locale: "de_IE",
-    url: "https://surfspiritfun.de",
+    url: process.env.SITE_URL,
     siteName: "Kite-/Surf Spirit Fun Camp",
   },
   twitter: {

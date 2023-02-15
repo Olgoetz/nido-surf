@@ -25,6 +25,7 @@ No modules.
 |------|------|
 | [github_repository.this](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository) | resource |
 | [vercel_project.landing_page](https://registry.terraform.io/providers/vercel/vercel/0.11.4/docs/resources/project) | resource |
+| [vercel_project_domain.landing_page_redirect](https://registry.terraform.io/providers/vercel/vercel/0.11.4/docs/resources/project_domain) | resource |
 
 ## Inputs
 

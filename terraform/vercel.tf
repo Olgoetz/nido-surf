@@ -7,3 +7,9 @@ resource "vercel_project" "landing_page" {
     repo = "Olgoetz/nido-surf"
   }
 }
+
+
+resource "vercel_project_domain" "landing_page_redirect" {
+  project_id = vercel_project.landing_page.id
+  domain     = "surfspiritfun.de"
+}

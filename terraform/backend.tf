@@ -1,9 +1,9 @@
 terraform {
   cloud {
-    organization = "Oliver-Projects"
+    organization = "Olgoetz-Projects"
 
     workspaces {
-      names = "nido-surf"
+      name = "nido-surf"
     }
   }
 }
