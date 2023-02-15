@@ -81,6 +81,9 @@ const ContactModal = ({ buttonStyles }) => {
         requestOptions
       );
       console.log(result);
+      console.log(result.json());
+      const jsonified = await result.json();
+      console.log(jsonified);
       setIsLoading(false);
       if (result.status == 200) {
         setSuccessfulSubmission(true);
