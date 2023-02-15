@@ -77,10 +77,9 @@ const ContactModal = ({ buttonStyles }) => {
     try {
       setIsLoading(true);
       const result = await fetch(
-        `https://formsubmit.co/rebekka.baer@nidosurf.com`,
+        `https://formsubmit.co/438dae3a7d12323f55c6fe8e5e790eae`,
         requestOptions
       );
-      console.log(result);
       setIsLoading(false);
       if (result.status == 200) {
         setSuccessfulSubmission(true);
@@ -111,7 +110,6 @@ const ContactModal = ({ buttonStyles }) => {
           <form
             onSubmit={handleSubmit}
             className="mt-5 flex flex-col justify-between"
-            method="POST"
           >
             <label htmlFor="name" className="font-bold mb-2">
               Nachname
