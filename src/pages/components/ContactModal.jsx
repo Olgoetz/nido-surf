@@ -76,7 +76,7 @@ const ContactModal = ({ buttonStyles }) => {
 
     try {
       setIsLoading(true);
-      console(process.env.EMAIL_ENDPOINT);
+      console.log(process.env.EMAIL_ENDPOINT);
       console.log(`https://formsubmit.co/${process.env.EMAIL_ENDPOINT}`);
       const result = await fetch(
         `https://formsubmit.co/${process.env.EMAIL_ENDPOINT}`,
