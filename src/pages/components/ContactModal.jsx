@@ -76,6 +76,7 @@ const ContactModal = ({ buttonStyles }) => {
 
     try {
       setIsLoading(true);
+      console.log("Email endpoint string: ", process.env.EMAIL_ENDPOINT);
       const result = await fetch(
         `https://formsubmit.co/ajax/${process.env.EMAIL_ENDPOINT}`,
         requestOptions
