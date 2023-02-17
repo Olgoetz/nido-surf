@@ -79,7 +79,7 @@ const ContactModal = ({ buttonStyles }) => {
       console.log(process.env.EMAIL_ENDPOINT);
       console.log(`https://formsubmit.co/${process.env.EMAIL_ENDPOINT}`);
       const result = await fetch(
-        `https://formsubmit.co/${process.env.EMAIL_ENDPOINT}`,
+        "https://formsubmit.co/goetzoliver89@gmail.com",
         requestOptions
       );
       setIsLoading(false);
