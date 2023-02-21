@@ -78,7 +78,7 @@ const ContactModal = ({ buttonStyles }) => {
       setIsLoading(true);
 
       const result = await fetch(
-        "https://formsubmit.co/posada@nidosurf.com",
+        "https://formsubmit.co/ajax/6ad3542bc6fabf33d13ce596cabf2660",
         requestOptions
       );
       setIsLoading(false);
