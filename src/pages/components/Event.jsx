@@ -11,9 +11,9 @@ const Event = () => {
           </p>
           <div className="grid md:grid-cols-2 gap-x-3 gap-y-6 items-stretch text-justify mt-4">
             <div className="flex flex-col justify-between items-center">
-              <h1 className="text-3xl font-easyRider text-center mb-4">
+              <h2 className="text-3xl font-easyRider text-center mb-4">
                 Kite-/Surf Spirit Fun Camp
-              </h1>
+              </h2>
               <h2 className="text-2xl font-easyRider text-center mb-4">
                 18.05 - 23.05.2023
               </h2>
