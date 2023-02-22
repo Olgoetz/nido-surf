@@ -23,22 +23,30 @@ const NavBar = () => {
       <div
         className={`${navColor} px-4 fixed w-full flex justify-between z-[5] items-center h-[80px]`}
       >
-        <Link href="/">
+        <Link href="/" title="Homepage">
           <Image alt="nido-surf" width={100} priority src={LogoVert}></Image>
         </Link>
 
         <ul className=" hidden md:flex uppercase">
           <li className="px-4 cursor-pointer">
-            <Link href="/">home</Link>
+            <Link title="Homepage" href="/">
+              home
+            </Link>
           </li>
           <li className="px-4 cursor-pointer">
-            <Link href="/#event">event</Link>
+            <Link title="Event" href="/#event">
+              event
+            </Link>
           </li>
           <li className="px-4 cursor-pointer">
-            <Link href="/#package">paket</Link>
+            <Link titte="Paketinhalt" href="/#package">
+              paket
+            </Link>
           </li>
           <li className="px-4 cursor-pointer">
-            <Link href="/#aboutus">über uns</Link>
+            <Link title="Über uns" href="/#aboutus">
+              über uns
+            </Link>
           </li>
         </ul>
 
