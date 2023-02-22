@@ -30,7 +30,7 @@ const Footer = () => {
           }
         />
         <ul className="flex flex-col text-black text-[12px]">
-          <a href="mailto:posada@nidosurf.com">
+          <a title="Email Adresse nidosurf" href="mailto:posada@nidosurf.com">
             <li className="flex items-center">
               <HiOutlineMail size={50} className="mr-1" />
               posada@nidosurf.com
@@ -41,9 +41,13 @@ const Footer = () => {
 
       <div className="flex flex-col text-sm text-black pt-5">
         <div className="flex justify-center pb-3">
-          <Link href="/impressum">Impressum</Link>
+          <Link title="Impressum" href="/impressum">
+            Impressum
+          </Link>
           <span className="mx-2">|</span>
-          <Link href="/datenschutz">Datenschutz</Link>
+          <Link title="Datenschutz" href="/datenschutz">
+            Datenschutz
+          </Link>
         </div>
         <div className="flex justify-center">
           <BiCopyright size={20} className="mr-1" />

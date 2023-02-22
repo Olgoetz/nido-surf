@@ -67,6 +67,7 @@ const AboutUs = () => {
                       href="https://www.michaela-suessbauer.de"
                       rel="noreferrer"
                       target="_blank"
+                      title="Homepage Michaela Süßbauer"
                     >
                       https://www.michaela-suessbauer.de
                     </a>
@@ -77,6 +78,7 @@ const AboutUs = () => {
                       href="https://www.instagram.com/michaela_suessbauer/"
                       rel="noreferrer"
                       target="_blank"
+                      title="Instagram Michaela Süßbauer"
                     >
                       <AiFillInstagram size={30} />
                     </a>
@@ -84,6 +86,7 @@ const AboutUs = () => {
                       href="https://www.facebook.com/michaelasuessbauer1.de"
                       rel="noreferrer"
                       target="_blank"
+                      title="Facebook Michaela Süßbauer"
                     >
                       <AiFillFacebook size={30} />
                     </a>
@@ -94,9 +97,9 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="flex justify-around items-center mt-12">
-          <Image src={Board} height={100} />
-          <Image src={Tree} height={100} />
-          <Image src={Cocktail} height={100} />
+          <Image title="nido-surf-board" src={Board} height={100} />
+          <Image title="nido-surf-tree" src={Tree} height={100} />
+          <Image title="nido-surf-cocktail" src={Cocktail} height={100} />
         </div>
       </div>
     </>

@@ -62,22 +62,22 @@ const NavBar = () => {
           }
         >
           <li className="cursor-pointer mb-6">
-            <Link onClick={handleClick} href="/">
+            <Link onClick={handleClick} title="Homepage" href="/">
               home
             </Link>
           </li>
           <li className="cursor-pointer mb-6">
-            <Link onClick={handleClick} href="/#event">
+            <Link onClick={handleClick} title="Event" href="/#event">
               event
             </Link>
           </li>
           <li className="cursor-pointer mb-6">
-            <Link onClick={handleClick} href="/#package">
+            <Link onClick={handleClick} title="Paketinhalt" href="/#package">
               paket
             </Link>
           </li>
           <li className="cursor-pointer mb-6">
-            <Link onClick={handleClick} href="/#aboutus">
+            <Link onClick={handleClick} itle="Über uns" href="/#aboutus">
               über uns
             </Link>
           </li>
