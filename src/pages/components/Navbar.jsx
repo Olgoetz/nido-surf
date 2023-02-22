@@ -39,7 +39,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="px-4 cursor-pointer">
-            <Link titte="Paketinhalt" href="/#package">
+            <Link title="Paketinhalt" href="/#package">
               paket
             </Link>
           </li>
@@ -77,7 +77,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="cursor-pointer mb-6">
-            <Link onClick={handleClick} itle="Über uns" href="/#aboutus">
+            <Link onClick={handleClick} title="Über uns" href="/#aboutus">
               über uns
             </Link>
           </li>

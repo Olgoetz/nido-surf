@@ -97,9 +97,9 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="flex justify-around items-center mt-12">
-          <Image title="nido-surf-board" src={Board} height={100} />
-          <Image title="nido-surf-tree" src={Tree} height={100} />
-          <Image title="nido-surf-cocktail" src={Cocktail} height={100} />
+          <Image alt="nido-surf-board" src={Board} height={100} />
+          <Image alt="nido-surf-tree" src={Tree} height={100} />
+          <Image alt="nido-surf-cocktail" src={Cocktail} height={100} />
         </div>
       </div>
     </>
