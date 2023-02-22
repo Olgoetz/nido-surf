@@ -1,7 +1,8 @@
 export default {
-  title: "Kite-/Surf Spirit Fun Camp",
-  description:
+  title:
     "Kite-/Surf Spirit Fun Camp auf Sardinien mit Nido Surf und Michaela Süßbauer",
+  description:
+    "Kite-/Surf Spirit Fun Camp auf Sardinien mit Nido Surf und Michaela Süßbauer. Wir bieten täglich Kite-/Surf Kurse bei besten Windverhältnissen. Zusätzlich unterrichtet Michaela täglich Yogakurse und Faszientraining für die optimale Vorbereitung und Regeneration auf die Sessions.",
   openGraph: {
     type: "website",
     locale: "de_IE",
