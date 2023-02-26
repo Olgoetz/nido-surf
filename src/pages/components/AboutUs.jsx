@@ -35,6 +35,18 @@ const AboutUs = () => {
                   uns bereits jetzt auf gesellige, laue Sommerabende und After
                   Surf Drinks am Center mit dir.
                 </p>
+                <p className="mt-1">
+                  Besuche uns gerne demnächst auf unserer Website:{" "}
+                  <a
+                    className="text-secondary-blue-200"
+                    href="https://www.nidosurf.com"
+                    rel="noreferrer"
+                    target="_blank"
+                    title="Websit Nidosurf"
+                  >
+                    https://www.nidosurf.com
+                  </a>
+                </p>
               </div>
             </div>
             <div>
@@ -43,22 +55,24 @@ const AboutUs = () => {
               </p>
 
               <div className="text-justify">
-                <span className="text-secondary-blue-300">
-                  {" "}
-                  Motivation, Power, Temperament, Lebensfreude und ein
-                  strahlendes Lächeln…{" "}
-                </span>
-                das sind die Worte mit denen man Michaela am besten beschreiben
-                kann. Vor über 20 Jahren hängte Michi ihren Job als Bürokauffrau
-                an den Nagel, um ihre Passion für Sport und Tanz zum Beruf zu
-                machen. Seitdem reißt Michi die Teilnehmer in ihren Group
-                Fitness Kursen mit und vermittelt ihnen als Personaltrainerin
-                Spaß an der Bewegung. Michis Yoga Sessions und ihre
-                Core-Flexibility- und Faszien Einheiten sind ein ganzheitliches
-                Erlebnis für Body & Soul, nach dem ihr euch erfrischt und
-                energiegeladen fühlt und die Wirkung noch lange nachhält. Michi
-                ist außerdem leidenschaftliche Kiterin und wie wir liebt sie das
-                Gefühl der Freiheit auf dem Wasser.{" "}
+                <p>
+                  <span className="text-secondary-blue-300">
+                    {" "}
+                    Motivation, Power, Temperament, Lebensfreude und ein
+                    strahlendes Lächeln…{" "}
+                  </span>
+                  das sind die Worte mit denen man Michaela am besten
+                  beschreiben kann. Vor über 20 Jahren hängte Michi ihren Job
+                  als Bürokauffrau an den Nagel, um ihre Passion für Sport und
+                  Tanz zum Beruf zu machen. Seitdem reißt Michi die Teilnehmer
+                  in ihren Group Fitness Kursen mit und vermittelt ihnen als
+                  Personaltrainerin Spaß an der Bewegung. Michis Yoga Sessions
+                  und ihre Core-Flexibility- und Faszien Einheiten sind ein
+                  ganzheitliches Erlebnis für Body & Soul, nach dem ihr euch
+                  erfrischt und energiegeladen fühlt und die Wirkung noch lange
+                  nachhält. Michi ist außerdem leidenschaftliche Kiterin und wie
+                  wir liebt sie das Gefühl der Freiheit auf dem Wasser.{" "}
+                </p>
                 <div className="flex flex-col mt-1">
                   <p>
                     Für mehr Infos über Michi besucht ihre Homepage unter:{" "}
