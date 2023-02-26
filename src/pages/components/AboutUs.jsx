@@ -39,7 +39,7 @@ const AboutUs = () => {
                   Besuche uns gerne demnächst auf unserer Website:{" "}
                   <a
                     className="text-secondary-blue-200"
-                    href="https://www.nidosurf.com"
+                    href="https://nido.karlsson.koeln"
                     rel="noreferrer"
                     target="_blank"
                     title="Websit Nidosurf"
