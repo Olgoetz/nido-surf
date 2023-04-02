@@ -39,7 +39,7 @@ const AboutUs = () => {
                   Besuche uns gerne demnächst auf unserer Website:{" "}
                   <a
                     className="text-secondary-blue-200"
-                    href="https://nido.karlsson.koeln"
+                    href="https://www.nidosurf.com"
                     rel="noreferrer"
                     target="_blank"
                     title="Websit Nidosurf"
@@ -47,6 +47,16 @@ const AboutUs = () => {
                     https://www.nidosurf.com
                   </a>
                 </p>
+                <div className="flex justify-center gap-x-8 items-center mt-2">
+                  <a
+                    href="https://www.instagram.com/nidosurf/"
+                    rel="noreferrer"
+                    target="_blank"
+                    title="Instagram Nido Surf"
+                  >
+                    <AiFillInstagram size={30} />
+                  </a>
+                </div>
               </div>
             </div>
             <div>
@@ -63,12 +73,12 @@ const AboutUs = () => {
                   </span>
                   das sind die Worte mit denen man Michaela am besten
                   beschreiben kann. Vor über 20 Jahren hängte Michi ihren Job
-                  als Bürokauffrau an den Nagel, um ihre Passion für Sport und
-                  Tanz zum Beruf zu machen. Seitdem reißt Michi die Teilnehmer
-                  in ihren Group Fitness Kursen mit und vermittelt ihnen als
-                  Personaltrainerin Spaß an der Bewegung. Michis Yoga Sessions
-                  und ihre Core-Flexibility- und Faszien Einheiten sind ein
-                  ganzheitliches Erlebnis für Body & Soul, nach dem ihr euch
+                  als Industriekauffrau an den Nagel, um ihre Passion für Sport
+                  und Tanz zum Beruf zu machen. Seitdem reißt Michi die
+                  Teilnehmer in ihren Group Fitness Kursen mit und vermittelt
+                  ihnen als Personaltrainerin Spaß an der Bewegung. Michis Yoga
+                  Sessions und ihre Core-Flexibility- und Faszien Einheiten sind
+                  ein ganzheitliches Erlebnis für Body & Soul, nach dem ihr euch
                   erfrischt und energiegeladen fühlt und die Wirkung noch lange
                   nachhält. Michi ist außerdem leidenschaftliche Kiterin und wie
                   wir liebt sie das Gefühl der Freiheit auf dem Wasser.{" "}
