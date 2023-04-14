@@ -3,6 +3,7 @@ import Modal from "react-modal";
 import LogoHori from "../../../public/images/logo_hori.png";
 import { ClipLoader } from "react-spinners";
 import Image from "next/image";
+import Link from "next/link";
 const customStyles = {
   content: {
     top: "50%",
@@ -25,10 +26,14 @@ const ContactModal = ({ buttonStyles }) => {
   const [isValidEmail, setIsValidEmail] = useState(true);
   const [successfulSubmission, setSuccessfulSubmission] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const lastNameInputElement = useRef();
-  const firstNameInputElement = useRef();
   const emailInputElement = useRef();
-  const messageInputElement = useRef();
+  const [message, setMessage] = useState(
+    "Hi zusammen ,\n\nich interessiere mich für das bevorstehende Kite-/Surfcamp. Bitte schickt mir genauere Infos dazu."
+  );
+
+  const handleMessageInput = (e) => {
+    setMessage(e.target.value);
+  };
 
   const validate = (email) => {
     const expression =
@@ -54,10 +59,9 @@ const ContactModal = ({ buttonStyles }) => {
     console.log("clicked");
     event.preventDefault();
     const data = {
-      lastName: lastNameInputElement.current?.value,
-      firstName: firstNameInputElement.current?.value,
+      name: "Neue Nachricht über surfspiritfun.de",
       email: emailInputElement.current?.value,
-      message: messageInputElement.current?.value,
+      message: message,
     };
 
     if (!validate(data.email)) {
@@ -73,12 +77,11 @@ const ContactModal = ({ buttonStyles }) => {
       },
       body: JSON.stringify(data),
     };
-
     try {
       setIsLoading(true);
 
       const result = await fetch(
-        "https://formsubmit.co/ajax/6ad3542bc6fabf33d13ce596cabf2660",
+        process.env.NEXT_PUBLIC_EMAIL_ENDPOINT,
         requestOptions
       );
       setIsLoading(false);
@@ -112,27 +115,6 @@ const ContactModal = ({ buttonStyles }) => {
             onSubmit={handleSubmit}
             className="mt-5 flex flex-col justify-between"
           >
-            <label htmlFor="name" className="font-bold mb-2">
-              Nachname
-            </label>
-            <input
-              ref={lastNameInputElement}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
-              id="name"
-              type="text"
-              placeholder="Nachname"
-            />
-
-            <label htmlFor="firstname" className="font-bold my-2">
-              Vorname
-            </label>
-            <input
-              ref={firstNameInputElement}
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
-              id="firstname"
-              type="text"
-              placeholder="Vorname"
-            />
             <label htmlFor="email" className="font-bold my-2">
               Email-Adresse
             </label>
@@ -152,13 +134,27 @@ const ContactModal = ({ buttonStyles }) => {
               Nachricht
             </label>
             <textarea
-              ref={messageInputElement}
+              onChange={handleMessageInput}
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
               name="message"
               id="message"
               cols="30"
               rows="5"
+              value={message}
             ></textarea>
+            <p className="text-sm mt-2">
+              Mit dem Klick auf den Button &quotSenden&quot akzeptiere ich die
+              die{" "}
+              <Link
+                className="font-semibold"
+                title="Datenschutz"
+                href="/datenschutz"
+                target="_blank"
+              >
+                Datenschutzerklärung
+              </Link>
+              .
+            </p>
             <div className="mt-5 flex gap-x-4 justify-center items-center">
               <button
                 type="submit"
