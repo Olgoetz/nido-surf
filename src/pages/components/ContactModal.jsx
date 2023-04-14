@@ -143,8 +143,7 @@ const ContactModal = ({ buttonStyles }) => {
               value={message}
             ></textarea>
             <p className="text-sm mt-2">
-              Mit dem Klick auf den Button &quot;Senden&quot; akzeptiere ich die
-              die{" "}
+              Mit dem Klick auf den Button &quot;Senden&quot; akzeptiere ich die{" "}
               <Link
                 className="font-semibold"
                 title="Datenschutz"
