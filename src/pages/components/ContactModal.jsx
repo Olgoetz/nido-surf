@@ -59,6 +59,7 @@ const ContactModal = ({ buttonStyles }) => {
     console.log("clicked");
     event.preventDefault();
     const data = {
+      name: "Neue Nachricht über surfspiritfun.de",
       email: emailInputElement.current?.value,
       message: message,
     };
@@ -69,23 +70,31 @@ const ContactModal = ({ buttonStyles }) => {
     }
     setIsValidEmail(true);
     console.log(data);
-
-    setIsLoading(true);
-    const res = await fetch("/api/formsubmit", {
+    const requestOptions = {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify(data),
-    });
+    };
+    try {
+      setIsLoading(true);
 
-    setIsLoading(false);
-
-    const { error } = await res.json();
-    if (error) {
+      const result = await fetch(
+        process.env.NEXT_PUBLIC_EMAIL_ENDPOINT,
+        requestOptions
+      );
+      setIsLoading(false);
+      if (result.status == 200) {
+        setSuccessfulSubmission(true);
+        setTimeout(closeModal, 5000);
+      } else {
+        throw new Error();
+      }
+    } catch (error) {
       console.error(error);
       setSuccessfulSubmission(false);
-      return;
     }
-    setSuccessfulSubmission(true);
-    setTimeout(closeModal, 5000);
   };
 
   return (
@@ -134,7 +143,7 @@ const ContactModal = ({ buttonStyles }) => {
               value={message}
             ></textarea>
             <p className="text-sm mt-2">
-              Mit dem Klick auf den Button "Senden" akzeptiere ich die ich die{" "}
+              Mit dem Klick auf den Button "Senden" akzeptiere ich die die{" "}
               <Link
                 className="font-semibold"
                 title="Datenschutz"
