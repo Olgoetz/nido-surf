@@ -69,7 +69,10 @@ const ContactModal = ({ buttonStyles }) => {
       return;
     }
     setIsValidEmail(true);
+
+    // Process message
     console.log(data);
+
     const requestOptions = {
       method: "POST",
       headers: {
@@ -79,7 +82,6 @@ const ContactModal = ({ buttonStyles }) => {
     };
     try {
       setIsLoading(true);
-
       const result = await fetch(
         process.env.NEXT_PUBLIC_EMAIL_ENDPOINT,
         requestOptions
@@ -87,6 +89,18 @@ const ContactModal = ({ buttonStyles }) => {
       setIsLoading(false);
       if (result.status == 200) {
         setSuccessfulSubmission(true);
+
+        // Subscribe to mailerlite
+        await fetch("/api/mailerlite", {
+          body: JSON.stringify({
+            email: data.email,
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+          method: "POST",
+        });
+
         setTimeout(closeModal, 5000);
       } else {
         throw new Error();
