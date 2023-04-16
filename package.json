@@ -12,6 +12,7 @@
   "dependencies": {
     "@mailerlite/mailerlite-nodejs": "^1.0.1",
     "@next/font": "13.1.6",
+    "@rivercode/facebook-conversion-api-nextjs": "^4.1.0",
     "cssnano": "^5.1.15",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
