@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HangLoose from "../../../public/assets/nido-asset-16.png";
 import ContactModal from "./ContactModal";
+
 const Event = () => {
   return (
     <>

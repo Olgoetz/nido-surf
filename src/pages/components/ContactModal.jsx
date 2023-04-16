@@ -4,6 +4,8 @@ import LogoHori from "../../../public/images/logo_hori.png";
 import { ClipLoader } from "react-spinners";
 import Image from "next/image";
 import Link from "next/link";
+// import { fbEvent } from "@rivercode/facebook-conversion-api-nextjs";
+
 const customStyles = {
   content: {
     top: "50%",
@@ -52,6 +54,7 @@ const ContactModal = ({ buttonStyles }) => {
 
   function closeModal() {
     setIsOpen(false);
+
     setSuccessfulSubmission("");
   }
 

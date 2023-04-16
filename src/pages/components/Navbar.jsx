@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 import LogoVert from "../../../public/images/logo_vert.png";
+
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [navColor, setNavColor] = useState("");
@@ -18,6 +19,7 @@ const NavBar = () => {
   }, []);
 
   const handleClick = () => setNav(!nav);
+
   return (
     <>
       <div
